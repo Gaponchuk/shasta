@@ -1,7 +1,46 @@
-body {
+@import "header";
+@import "headline";
+@import "community";
+
+
+body, html {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
 	background-color: #189299;
 }
 
 .wrapper {
 	max-width: 1030px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 46px;
+	line-height: 52px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 0;
+	color: #3b3d40;
+
+	&__description {
+		font-size: 24px;
+		line-height: 26px;
+		text-align: center;
+		color: #656b6f;
+	}
+}
+
+.link {
+	display: inline-block;
+	font-size: 12px;
+	padding: 12px 35px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #2e71f2;
 }
