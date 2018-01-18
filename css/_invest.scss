@@ -1,0 +1,19 @@
+.invest {
+	padding-top: 70px;
+	background-color: #fff;
+	text-align: center;
+
+	.title {
+		margin-bottom: -6px;
+
+		&__description {
+			font-size: 20px;
+			line-height: 27px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.link {
+		margin-bottom: 70px;
+	}
+}

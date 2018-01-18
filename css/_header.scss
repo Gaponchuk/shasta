@@ -8,7 +8,12 @@
 	.header {
 		>.wrapper {
 			padding-top: 30px;
+
+			>.block-user-items {
+				display: none;
+			}
 		}
+		
 	}
 
 	.title {
@@ -91,14 +96,10 @@
 	}
 }
 
-.block-user-items {
-	display: none;
-}
-
 .header-img {
 	width: 63px;
 	height: 63px;
 	margin: 25vh auto 25px auto;
-	background-color: #fff;
-	background-image: url("img/");
+	/*background-color: #fff;*/
+	background-image: url("../img/header-img.png");
 }

@@ -1,7 +1,13 @@
 @import "header";
 @import "headline";
 @import "community";
-
+@import "reviews";
+@import "experience";
+@import "invest";
+@import "video-block";
+@import "next-move";
+@import "subscribe";
+@import "footer";
 
 body, html {
 	font-size: 16px;
@@ -43,4 +49,10 @@ body, html {
 	text-decoration: none;
 	color: #fff;
 	background-color: #2e71f2;
+	transition: all .5s ease;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 10px 15px -5px #2e71f2;
+	}
 }
