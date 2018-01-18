@@ -21,9 +21,9 @@
 					</ul>
 				</nav>
 				<div class="block-user-items">
-					<a class="block-user-items__link" href="#">log in</a>
-					<a class="block-user-items__link" href="#">sky</a>
-					<a class="block-user-items__link" href="#">photo</a>
+					<a class="block-user-items__link" href="#"></a>
+					<a class="block-user-items__link" href="#"></a>
+					<a class="block-user-items__link" href="#"></a>
 				</div>
 				<div class="mobile-menu">
 					<span class="mobile-menu__item"></span>
@@ -57,6 +57,7 @@
 					We’re proud of our products, and we’re really excited when we get feedback from our users.
 				</p>
 				<div class="slider">
+					<button class="slider__btn slider__btn-left"></button>
 					<div class="card">
 						<picture class="card__photo"><img class="card__image" src="img/img1.jpg" alt="photo"></picture>
 						<p class="card__text">
@@ -83,33 +84,38 @@
 						<h3 class="card__title">Maryanne Smyth</h3>
 						<span class="card__info">Buyer at company name</span>
 					</div>
+					<button class="slider__btn slider__btn-right"></button>
 				</div>
 			</div>
 		</section>
 		<section class="reviews">
 			<div class="wrapper">
 				<h2 class="title">What people say</h2>
-
+				<div class="slider">
+				<button class="slider__btn slider__btn-left"></button>
 				<div class="review">
 					<p class="review__text">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.
 					</p>
 					<h3 class="review__title">Johnathan Smith</h3>
 					<span class="review__info">Vice president information technology, company name</span>
 				</div>
-
 				<div class="review">
 					<p class="review__text">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. 
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam. 
 					</p>
 					<h3 class="review__title">Mary Smyth</h3>
 					<span class="review__info">Creative director and co-founder, company name</span>
+				</div>
+				<button class="slider__btn slider__btn-right"></button>
 				</div>
 			</div>
 		</section>
 		<section class="experience">
 			<div class="wrapper">
-				<picture><img src="" alt="image"></picture>
+				<picture class="photo-block">
+					<img class="photo-block__img" src="img/img_b1.jpg" alt="image">
+				</picture>
 				<div class="right-block">
 					<h2 class="title">Liberation experience</h2>
 					<p class="title__description">
@@ -122,70 +128,74 @@
 		<section class="invest">
 			<div class="wrapper">
 				<div class="left-block">
+					<picture class="photo-block">
+						<img class="photo-block__img" src="img/img_b2.jpg" alt="image">
+					</picture>
 					<h2 class="title">We want to invest in the future</h2>
-					<p class="title_description">
+					<p class="title__description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore voluptates, doloremque minima deleniti similique repellendus recusandae praesentium hic officiis consequatur. Doloremque, ullam, dolorem.
 					</p>
 					<a href="#" class="link">donate</a>
-					<picture><img src="" alt="image"></picture>
 				</div>
 			</div>
 		</section>
-		<section class="video">
-			<div class="wrapper">
-				<video class="video" controls="controls" poster="">
+		<section class="video-block">
+			<!-- <div class="wrapper"> -->
+				<video class="video" poster="">
 					<source src="" type="">
 					<source src="" type="">
 				</video>
-				<h2 class="title">Learn more about our culture...</h2>
-				<button class="play"></button>
-				<p class="title__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa molestiae magni quisquam sequi, totam nulla quaerat esse.
-				</p>
-			</div>
+				<div class="video-block__info">
+					<h2 class="video-block__title title">Learn more about our culture...</h2>
+					<button class="video-block__btn play"></button>
+					<p class="video-block__text title__description">
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+			<!-- </div> -->
 		</section>
 		<section class="next-move">
-			<span class="next-move__icon"></span>
-			<h2 class="title">You next move</h2>
-			<p class="title__description">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laudantium minus.
-			</p>
-			<div class="move-block">
-				<span class="icon"></span>
-				<h4 class="mave-block__title">Experience</h4>
-				<p class="move-block__desciption">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			<div class="wrapper">
+				<span class="next-move__icon"></span>
+				<h2 class="title">You next move</h2>
+				<p class="title__description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laudantium minus.
 				</p>
-			</div>
-			<div class="move-block">
-				<span class="icon"></span>
-				<h4 class="mave-block__title">Our future</h4>
-				<p class="move-block__desciption">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</p>
-			</div>
-			<div class="move-block">
-				<span class="icon"></span>
-				<h4 class="mave-block__title">Academic talants</h4>
-				<p class="move-block__desciption">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</p>
-			</div>
-			<div class="move-block">
-				<span class="icon"></span>
-				<h4 class="mave-block__title">Brilliant minds</h4>
-				<p class="move-block__desciption">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</p>
+				<div class="wrapper-move-block">
+					<div class="move-block time">
+						<h4 class="move-block__title">Experience</h4>
+						<p class="move-block__desciption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="move-block heart">
+						<h4 class="move-block__title">Our future</h4>
+						<p class="move-block__desciption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="move-block dollar">
+						<h4 class="move-block__title">Academic talants</h4>
+						<p class="move-block__desciption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="move-block user">
+						<h4 class="move-block__title">Brilliant minds</h4>
+						<p class="move-block__desciption">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="subscribe">
 			<div class="wrapper">
 				<h2 class="title">Join our program</h2>
 				<p class="title__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<form class="descrip-form" action="" method="">
-					<input type="text" class="descrip-form__input" placeholder="Email">
-					<button class="link"></button>
+				<form class="subscribe-form" action="" method="">
+					<input type="text" class="subscribe-form__input" placeholder="Email">
+					<button class="subscribe-form__btn link">Subscribe</button>
 				</form>
 			</div>
 		</section>
@@ -196,18 +206,18 @@
 				shasta
 			</a>
 			<div class="address">
-				<p>
+				<p class="address__text">
 					123 Street,<br>
 					Anytown, USA 12345
 				</p>
-				<a href="mailto:hello@website.com">hello@website.com</a>
+				<a class="address__link" href="mailto:hello@website.com">hello@website.com</a>
 			</div>
 			<div class="block-user-items">
-				<a href="" class="block-user-items__link">login</a>
-				<a href="" class="block-user-items__link">sky</a>
-				<a href="" class="block-user-items__link">photo</a>
-				<p class="copyright">&copy;2016 Shasta, All rights reserved</p>
+				<a href="" class="block-user-items__link block-user-items__link--user"></a>
+				<a href="" class="block-user-items__link block-user-items__link--cloud"></a>
+				<a href="" class="block-user-items__link block-user-items__link--photo"></a>
 			</div>
+			<p class="copyright">&copy;2016 Shasta, All rights reserved</p>
 		</div>
 	</footer>
 </body>
