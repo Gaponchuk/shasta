@@ -57,6 +57,7 @@
 }
 
 .logo {
+	font-family: 'Roboto-Medium';
 	font-size: 1em;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -120,11 +121,32 @@
 	}
 
 	&__link {
+		position: relative;
+		font-family: 'Roboto-Regular';
 		display: block;
 		text-transform: uppercase;
 		text-decoration: none;
 		color: #ffff;
-		transition: background-color .5s ease;
+		transition: all .5s ease;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 3px;
+			top: 100%;
+			left: 0;
+			background-color: #fff;
+			transform: translateY(-10%) scale(.5);
+			opacity: 0;
+			transition: all .5s ease;
+		}
+
+		&:hover::after {
+			transform: translateY(0) scale(1);
+			opacity: 1;
+		}
+
 
 		@media screen and (max-width: 900px) {
 			display: inline-block;

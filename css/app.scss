@@ -1,3 +1,4 @@
+@import "fonts";
 @import "header";
 @import "headline";
 @import "community";
@@ -25,6 +26,7 @@ body, html {
 }
 
 .title {
+	font-family: 'Roboto-Bold', sans-serif;
 	font-size: 46px;
 	line-height: 52px;
 	text-align: center;
@@ -43,6 +45,7 @@ body, html {
 	}
 
 	&__description {
+		font-family: serif;
 		font-size: 24px;
 		line-height: 26px;
 		text-align: center;

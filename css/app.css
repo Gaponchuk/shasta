@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .first-screen {
   min-height: 100vh;
   height: 100%;
@@ -51,6 +69,7 @@
 }
 
 .logo {
+  font-family: 'Roboto-Medium';
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -112,11 +131,29 @@
   }
 }
 .navigation__link {
+  position: relative;
+  font-family: 'Roboto-Regular';
   display: block;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffff;
-  transition: background-color .5s ease;
+  transition: all .5s ease;
+}
+.navigation__link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  transform: translateY(-10%) scale(0.5);
+  opacity: 0;
+  transition: all .5s ease;
+}
+.navigation__link:hover::after {
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
 @media screen and (max-width: 900px) {
   .navigation__link {
@@ -655,6 +692,7 @@
   background-image: url("../img/svg/user.svg");
 }
 .move-block__title {
+  font-family: 'Roboto-Medium', sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -854,6 +892,7 @@ body, html {
 }
 
 .title {
+  font-family: 'Roboto-Bold', sans-serif;
   font-size: 46px;
   line-height: 52px;
   text-align: center;
@@ -872,6 +911,7 @@ body, html {
   }
 }
 .title__description {
+  font-family: serif;
   font-size: 24px;
   line-height: 26px;
   text-align: center;
