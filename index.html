@@ -3,27 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shasta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="swiper/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 	<section class="first-screen">
-		<header class="header">
+		<header id="top" class="header">
 			<div class="wrapper">
 				<a href="#" class="logo">
 					shasta
 				</a>
 				<nav class="navigation">
 					<ul class="navigation__list">
-						<li class="navigation__item"><a class="navigation__link" href="#">Project</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">About us</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">Stories</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">contact</a></li>
+						<li class="navigation__item"><a class="navigation__link slowly" href="#project">Project</a></li>
+						<li class="navigation__item"><a class="navigation__link slowly" href="#about">About us</a></li>
+						<li class="navigation__item"><a class="navigation__link slowly" href="#stories">Stories</a></li>
+						<li class="navigation__item"><a class="navigation__link slowly" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<div class="block-user-items">
-					<a class="block-user-items__link" href="#"></a>
-					<a class="block-user-items__link" href="#"></a>
-					<a class="block-user-items__link" href="#"></a>
+					<a href="" class="block-user-items__link block-user-items__link--user"></a>
+					<a href="" class="block-user-items__link block-user-items__link--cloud"></a>
+					<a href="" class="block-user-items__link block-user-items__link--photo"></a>
 				</div>
 				<div class="mobile-menu">
 					<span class="mobile-menu__item"></span>
@@ -39,75 +43,81 @@
 	<main>
 		<section class="headline">
 			<div class="wrapper">
-				<h2 class="title">This is the Section Headline, Continues to Two Lines</h2>
+				<h2 id="project" class="title">This is the Section Headline, Continues to Two Lines</h2>
 				<p class="title__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
-				<p class="left-block-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
-				</p>
-				<p class="right-block-text">
-					Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-				</p>
+				<div class="text-block">
+					<p class="left-block-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
+					</p>
+					<p class="right-block-text">
+						Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+					</p>
+				</div>
 				<a href="#" class="link">read more</a>
 			</div>
 		</section>
 		<section class="community">
 			<div class="wrapper">
-				<h2 class="title">Big community of people like you</h2>
+				<h2 id="about" class="title">Big community of people like you</h2>
 				<p class="title__description">
 					We’re proud of our products, and we’re really excited when we get feedback from our users.
 				</p>
-				<div class="slider">
-					<button class="slider__btn slider__btn-left"></button>
-					<div class="card">
-						<picture class="card__photo"><img class="card__image" src="img/img1.jpg" alt="photo"></picture>
-						<p class="card__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officia debitis, mollitia illum, dolore ullam.
-						</p>
-						<h3 class="card__title">Mary Smith</h3>
-						<span class="card__info">Lead designer at company name</span>
-					</div>
+				<div class="slider swiper-container">
+					<button id="arrow-left" class="swiper-button-prev swiper-button-black"></button>
+					<div class="swiper-wrapper">
+						<div class="card swiper-slide">
+							<picture class="card__photo"><img class="card__image" src="img/img1.jpg" alt="photo"></picture>
+							<p class="card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officia debitis, mollitia illum, dolore ullam.
+							</p>
+							<h3 class="card__title">Mary Smith</h3>
+							<span class="card__info">Lead designer at company name</span>
+						</div>
 
-					<div class="card">
-						<picture class="card__photo"><img class="card__image" src="img/img2.jpg" alt="photo"></picture>
-						<p class="card__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui itaque, quasi incidunt.
-						</p>
-						<h3 class="card__title">John Smyth</h3>
-						<span class="card__info">Creative director in company name</span>
-					</div>
+						<div class="card swiper-slide">
+							<picture class="card__photo"><img class="card__image" src="img/img2.jpg" alt="photo"></picture>
+							<p class="card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui itaque, quasi incidunt.
+							</p>
+							<h3 class="card__title">John Smyth</h3>
+							<span class="card__info">Creative director in company name</span>
+						</div>
 
-					<div class="card">
-						<picture class="card__photo"><img class="card__image" src="img/img3.jpg" alt="photo"></picture>
-						<p class="card__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque inventore dolorum temporibus eum nobis possimus, nesciunt recusandae.
-						</p>
-						<h3 class="card__title">Maryanne Smyth</h3>
-						<span class="card__info">Buyer at company name</span>
+						<div class="card swiper-slide">
+							<picture class="card__photo"><img class="card__image" src="img/img3.jpg" alt="photo"></picture>
+							<p class="card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque inventore dolorum temporibus eum nobis possimus, nesciunt recusandae.
+							</p>
+							<h3 class="card__title">Maryanne Smyth</h3>
+							<span class="card__info">Buyer at company name</span>
+						</div>
 					</div>
-					<button class="slider__btn slider__btn-right"></button>
+					<button id="arrow-right" class="swiper-button-next swiper-button-black"></button>
 				</div>
 			</div>
 		</section>
 		<section class="reviews">
 			<div class="wrapper">
 				<h2 class="title">What people say</h2>
-				<div class="slider">
-				<button class="slider__btn slider__btn-left"></button>
-				<div class="review">
-					<p class="review__text">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.
-					</p>
-					<h3 class="review__title">Johnathan Smith</h3>
-					<span class="review__info">Vice president information technology, company name</span>
+				<div class="slider swiper-container2">
+				<button id="review-left" class="swiper-button-prev swiper-button-white"></button>
+				<div class="swiper-wrapper">
+					<div class="review swiper-slide">
+						<p class="review__text">
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.
+						</p>
+						<h3 class="review__title">Johnathan Smith</h3>
+						<span class="review__info">Vice president information technology, company name</span>
+					</div>
+					<div class="review swiper-slide">
+						<p class="review__text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam. 
+						</p>
+						<h3 class="review__title">Mary Smyth</h3>
+						<span class="review__info">Creative director and co-founder, company name</span>
+					</div>
 				</div>
-				<div class="review">
-					<p class="review__text">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam. 
-					</p>
-					<h3 class="review__title">Mary Smyth</h3>
-					<span class="review__info">Creative director and co-founder, company name</span>
-				</div>
-				<button class="slider__btn slider__btn-right"></button>
+				<button id="review-right" class="swiper-button-next swiper-button-white"></button>
 				</div>
 			</div>
 		</section>
@@ -117,7 +127,7 @@
 					<img class="photo-block__img" src="img/img_b1.jpg" alt="image">
 				</picture>
 				<div class="right-block">
-					<h2 class="title">Liberation experience</h2>
+					<h2 id="stories" class="title">Liberation experience</h2>
 					<p class="title__description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellendus sit corrupti non quia eius qui ullam nemo eos!
 					</p>
@@ -127,10 +137,10 @@
 		</section>
 		<section class="invest">
 			<div class="wrapper">
-				<div class="left-block">
-					<picture class="photo-block">
+				<picture class="photo-block">
 						<img class="photo-block__img" src="img/img_b2.jpg" alt="image">
 					</picture>
+				<div class="left-block">
 					<h2 class="title">We want to invest in the future</h2>
 					<p class="title__description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore voluptates, doloremque minima deleniti similique repellendus recusandae praesentium hic officiis consequatur. Doloremque, ullam, dolorem.
@@ -189,7 +199,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="subscribe">
+		<section id="contact" class="subscribe">
 			<div class="wrapper">
 				<h2 class="title">Join our program</h2>
 				<p class="title__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -202,7 +212,7 @@
 	</main>
 	<footer class="footer">
 		<div class="wrapper">
-			<a href="#" class="logo">
+			<a href="#top" class="logo slowly">
 				shasta
 			</a>
 			<div class="address">
@@ -212,13 +222,19 @@
 				</p>
 				<a class="address__link" href="mailto:hello@website.com">hello@website.com</a>
 			</div>
-			<div class="block-user-items">
-				<a href="" class="block-user-items__link block-user-items__link--user"></a>
-				<a href="" class="block-user-items__link block-user-items__link--cloud"></a>
-				<a href="" class="block-user-items__link block-user-items__link--photo"></a>
+			<div class="footer-right-block">
+				<div class="block-user-items">
+					<a href="" class="block-user-items__link block-user-items__link--user"></a>
+					<a href="" class="block-user-items__link block-user-items__link--cloud"></a>
+					<a href="" class="block-user-items__link block-user-items__link--photo"></a>
+				</div>
+				<p class="copyright">&copy;2016 Shasta, All rights reserved</p>
 			</div>
-			<p class="copyright">&copy;2016 Shasta, All rights reserved</p>
 		</div>
+		<a href="#top" class="go-up slowly"></a>
 	</footer>
+	<script src="swiper/js/swiper.min.js"></script>
+	<script src="js/swiper-custom.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>
