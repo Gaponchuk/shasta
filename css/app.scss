@@ -32,6 +32,16 @@ body, html {
 	margin-top: 0;
 	color: #3b3d40;
 
+	@media screen and (min-width: 900px) {
+		max-width: 405px;
+		margin: 0 auto;
+
+		&__description {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+	}
+
 	&__description {
 		font-size: 24px;
 		line-height: 26px;
@@ -54,5 +64,42 @@ body, html {
 
 	&:hover {
 		box-shadow: 0 10px 15px -5px #2e71f2;
+	}
+}
+
+/*.swiper-container-wp8-horizontal,
+.swiper-container-wp8-horizontal > .swiper-wrapper {
+	  min-height: 100%;padding: 5px;width: 100%;
+}*/
+
+.swiper-container2 {
+	overflow-x: hidden;
+}
+
+.go-up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #2e71f2;
+	border-radius: 50%;
+	z-index: 555;
+
+	&:hover {
+		box-shadow: 0 0px 15px 1px #2e71f2;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 15px;
+		height: 15px;
+		top: 50%;
+		left: 50%;
+		border: 2px solid #fff;
+		border-width: 0px 2px 2px 0;
+		transform: translate(-50%, -30%) rotate(-135deg);
 	}
 }

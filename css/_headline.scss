@@ -2,11 +2,27 @@
 	padding-top: 85px;
 	background-color: #f9f9f9;
 
+	@media screen and (min-width: 900px) {
+		text-align: center;
+	}
+
 	.title {
 		text-align: left;
 
+		@media screen and (min-width: 900px) {
+			max-width: 720px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
 		&__description { 
 			text-align: left;
+
+			@media screen and (min-width: 900px) {
+				max-width: 405px;
+				margin: 0 auto 70px auto;
+				text-align: center;
+			}
 		}
 	}
 
@@ -15,6 +31,12 @@
 		font-size: 15px;
 		line-height: 20px;
 		color: #656b6f;
+
+		@media screen and (min-width: 900px) {
+			width: 50%;
+			max-width: 410px;
+			text-align: left;
+		}
 	}
 
 	.right-block-text {
@@ -23,5 +45,13 @@
 
 	.link {
 		margin-bottom: 50px;
+	}
+}
+
+.text-block {
+
+	@media screen and (min-width: 900px) {
+		display: flex;
+		justify-content: space-around;
 	}
 }

@@ -23,9 +23,11 @@
 	}
 
 	.review {
-		max-width: 315px;
+		/*max-width: 315px;*/
 		box-sizing: border-box;
-		padding-bottom: 30px;
+		padding-left: 55px;
+		padding-right: 55px;
+		/*padding-bottom: 30px;*/
 
 		&__text {
 			font-size: 34px;

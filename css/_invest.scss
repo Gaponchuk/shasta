@@ -3,17 +3,46 @@
 	background-color: #fff;
 	text-align: center;
 
+	> .wrapper {
+		@media screen and (min-width: 900px) {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+	}
+
 	.title {
 		margin-bottom: -6px;
+
+		@media screen and (min-width: 900px) {
+			text-align: left;
+		}
 
 		&__description {
 			font-size: 20px;
 			line-height: 27px;
 			margin-bottom: 35px;
+
+			@media screen and (min-width: 900px) {
+				text-align: left;
+			}
 		}
 	}
 
 	.link {
 		margin-bottom: 70px;
+	}
+
+	.left-block {
+		@media screen and (min-width: 900px) {
+			max-width: 400px;
+			text-align: left;
+			margin-right: 115px;
+			order: 1;
+		}
+	}
+
+	.photo-block {
+		order: 2;
 	}
 }

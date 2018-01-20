@@ -16,12 +16,22 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+
+		@media screen and (min-width: 900px) {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	.title__description {
+		max-width: 430px;
+		margin: 0 auto 60px auto;
 	}
 }
 
 .wrapper-move-block {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
